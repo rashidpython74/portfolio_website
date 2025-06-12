@@ -1,0 +1,66 @@
+[
+  
+  {
+    "name": "Road Rescue",
+    "desc": "My FYP for sending alert to rider victims and ambulace when there is accident happens",
+    "image": "roadrescue",
+    "category": "IoT",
+    "links": {
+      "code": "https://github.com/rashidpython74/RoadRescue"
+    }
+  },
+  {
+    "name": "Facial Recognition System",
+    "desc": "An AI based facial recognition system that uses computer vision to recognize faces. ",
+    "image": "facial_recognition",
+    "category": "Computer Vision",
+    "links": {
+      "code": "https://github.com/rashidpython74/Facial_recognition_system"
+    }
+  },
+  {
+    "name": "Traffic Sign Detection",
+    "desc": "An AI based traffic signs detection system that uses computer vision and a model trained by YOLO 11",
+    "image": "roadsign",
+    "category": "Computer Vision",
+    "links": {
+      "code": "https://github.com/rashidpython74/Traffic_sign_detection"
+    }
+  },
+  {
+    "name": "Chatbot",
+    "desc": "A chatbot built by fine tuning Google Gemini model ",
+    "image": "chatbot",
+    "category": "LLM",
+    "links": {
+      "code": "https://github.com/rashidpython74/Chatbot"
+    }
+  },
+  {
+    "name": "Hand Gestures Recognition",
+    "desc": "A real-time AI-based system that detects and classifies hand gestures using a webcam. Built using Python, OpenCV, and Mediapipe",
+    "image": "handgestures",
+    "category": "Image Processing",
+    "links": {
+      "code": "https://github.com/rashidpython74/Hand_gesture_recognition"
+    }
+  },
+  {
+    "name": "Real-Time Object Detection",
+    "desc": "A real-time object detection system using the YOLOv8 model. The system detects and labels multiple objects in video streams with high precision.",
+    "image": "objectdetection",
+    "category": "Object Detection",
+    "links": {
+      "code": "https://github.com/rashidpython74/Realtime_object_detection"
+    }
+  },
+   {
+    "name": "Skin Disease Detection",
+    "desc": "Created a deep learning model using TensorFlow and Keras to classify skin diseases from image data.",
+    "image": "skindisease",
+    "category": "Object Detection",
+    "links": {
+      "code": "https://github.com/rashidpython74/Skin_disease_detection"
+    }
+  }
+]
