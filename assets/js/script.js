@@ -38,3 +38,24 @@ navLinks.forEach((link) => link.addEventListener('click', () => {
   menuButton?.setAttribute('aria-expanded', 'false');
   if (menuButton) menuButton.querySelector('i').className = 'fa-solid fa-bars';
 }));
+
+const sections = [...document.querySelectorAll('main section[id]')];
+const sectionLinks = new Map(
+  [...navLinks].map((link) => [link.getAttribute('href').slice(1), link]),
+);
+
+const sectionObserver = new IntersectionObserver(
+  (entries) => {
+    const visibleSection = entries
+      .filter((entry) => entry.isIntersecting)
+      .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+    if (!visibleSection) return;
+
+    navLinks.forEach((link) => link.classList.remove('active'));
+    sectionLinks.get(visibleSection.target.id)?.classList.add('active');
+  },
+  { rootMargin: '-20% 0px -55% 0px', threshold: [0.05, 0.2, 0.4] },
+);
+
+sections.forEach((section) => sectionObserver.observe(section));
