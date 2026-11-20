@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Rashid Ali - Backend Software Engineer building reliable systems for enterprise infrastructure.">
-  <meta name="theme-color" content="#0b1625">
+  <meta name="description" content="Rashid Ali - Backend Software Engineer for enterprise systems and network automation.">
+  <meta name="theme-color" content="#f8fafc">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="icon" href="assets/images/favicon.png" type="image/png">
@@ -15,102 +15,78 @@
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-
-  <header class="site-header" id="top">
-    <a class="wordmark" href="#top" aria-label="Rashid Ali, home">RA<span>.</span></a>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
-      <span class="sr-only">Open navigation</span><i class="fa-solid fa-bars"></i>
-    </button>
-    <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
-      <a href="#about">About</a>
-      <a href="#expertise">Expertise</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a class="nav-contact" href="#contact">Let’s talk <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+  <aside class="rail" aria-label="Site navigation">
+    <a class="brand" href="#home" aria-label="Rashid Ali, home">RA<span>.</span></a>
+    <nav class="rail-nav" id="site-nav">
+      <a class="active" href="#home"><i class="fa-solid fa-house"></i><span>Home</span></a>
+      <a href="#about"><i class="fa-solid fa-user"></i><span>About</span></a>
+      <a href="#experience"><i class="fa-solid fa-briefcase"></i><span>Experience</span></a>
+      <a href="#expertise"><i class="fa-solid fa-code"></i><span>Skills</span></a>
+      <a href="#projects"><i class="fa-regular fa-folder-open"></i><span>Work</span></a>
+      <a href="#contact"><i class="fa-regular fa-envelope"></i><span>Contact</span></a>
     </nav>
+    <div class="rail-bottom">
+      <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false"><i class="fa-regular fa-moon"></i><span>Dark mode</span></button>
+      <a class="rail-github" href="https://github.com/rashidpython74" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i><span>GitHub</span></a>
+    </div>
+  </aside>
+
+  <header class="mobile-header">
+    <a class="brand" href="#home">RA<span>.</span></a>
+    <div><button class="theme-toggle mobile-theme" type="button" aria-label="Switch to dark mode" aria-pressed="false"><i class="fa-regular fa-moon"></i></button><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="sr-only">Open navigation</span><i class="fa-solid fa-bars"></i></button></div>
   </header>
 
   <main id="main">
-    <section class="hero" aria-labelledby="hero-title">
+    <section class="hero section-grid" id="home" aria-labelledby="hero-title">
+      <div class="grid-lines" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
       <div class="hero-copy">
-        <p class="eyebrow"><span></span> Available for meaningful engineering work</p>
-        <h1 id="hero-title">Building dependable systems for complex operations.</h1>
-        <p class="hero-summary">I’m Rashid Ali, a backend software engineer focused on multi-tenant platforms, network automation, and the infrastructure that helps organizations operate with confidence.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#contact">Start a conversation <i class="fa-solid fa-arrow-right"></i></a>
-          <a class="button button-text" href="https://github.com/rashidpython74" target="_blank" rel="noreferrer">View GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-        </div>
+        <p class="kicker"><span class="rule"></span>Backend software engineer<span class="rule"></span></p>
+        <h1 id="hero-title">RASHID<br>ALI<span>.</span></h1>
+        <p class="hero-intro">I build <strong>reliable systems</strong> for organizations operating at scale—where secure infrastructure, clear data, and dependable automation matter.</p>
+        <div class="hero-actions"><a class="button primary" href="#contact">Get in touch <i class="fa-solid fa-arrow-right"></i></a><a class="button secondary" href="#projects">View work <i class="fa-solid fa-arrow-down"></i></a></div>
       </div>
-      <aside class="hero-panel" aria-label="Professional summary">
-        <div class="portrait-wrap"><img src="assets/images/profile2.jpg" alt="Rashid Ali"></div>
-        <div class="hero-panel-detail"><p class="mono-label">Currently</p><p>Python Developer<br><span>Extravis · Islamabad</span></p></div>
-        <div class="hero-panel-detail"><p class="mono-label">Focus</p><p>Backend &amp; enterprise systems</p></div>
-      </aside>
+      <div class="profile-stage">
+        <div class="availability"><span></span> Available for work</div>
+        <div class="portrait-frame"><img src="assets/images/profile2.jpg" alt="Rashid Ali"></div>
+        <div class="experience-badge"><strong>1+ Years</strong><span>Enterprise engineering</span></div>
+        <div class="stage-dots" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+      </div>
+      <a class="scroll-cue" href="#about"><span></span> Scroll to explore</a>
     </section>
 
-    <section class="trust-strip" aria-label="Core capabilities">
-      <p>Enterprise-minded engineering</p>
-      <div><span>Multi-tenant platforms</span><span>Network automation</span><span>Production APIs</span><span>Cloud delivery</span></div>
+    <section class="intro-band" id="about" aria-labelledby="about-title">
+      <div class="section-label"><span>01</span> Who I am</div>
+      <h2 id="about-title">ENGINEERING <em>CLARITY,</em><br>BUILDING <strong>RELIABILITY.</strong></h2>
+      <div class="intro-copy"><p>I’m a backend engineer working on multi-tenant network management and ITSM platforms. I turn complex operational needs into clean APIs, structured services, and practical automation.</p><a class="text-link" href="#experience">More about me <i class="fa-solid fa-arrow-right"></i></a></div>
+      <div class="stat-grid" aria-label="Career highlights"><article><i class="fa-solid fa-bug-slash"></i><strong>300+</strong><span>Issues resolved</span></article><article><i class="fa-solid fa-users"></i><strong>4</strong><span>Interns mentored</span></article><article><i class="fa-solid fa-building"></i><strong>Multi-tenant</strong><span>Platform experience</span></article><article><i class="fa-solid fa-server"></i><strong>Cloud + VM</strong><span>Production deployment</span></article></div>
     </section>
 
-    <section class="section about" id="about" aria-labelledby="about-title">
-      <div class="section-intro"><p class="eyebrow">01 / Profile</p><h2 id="about-title">Engineering clarity into systems with real operational weight.</h2></div>
-      <div class="about-body">
-        <p class="lead">I build backend services that are secure, observable, and designed to scale. My work spans authorization, data-intensive services, real-time analytics, and the automation of network operations.</p>
-        <p>At Extravis, I contribute to multi-tenant network management and ITSM products used in enterprise contexts. I care about the details that make software durable: clear boundaries, well-designed APIs, thoughtful data models, and reliable deployment practices.</p>
-        <dl class="profile-facts">
-          <div><dt>Based in</dt><dd>Rawalpindi, Pakistan</dd></div>
-          <div><dt>Primary stack</dt><dd>Python, FastAPI, Django, PostgreSQL</dd></div>
-          <div><dt>Working style</dt><dd>Clean architecture · pragmatic delivery</dd></div>
-        </dl>
+    <section class="content-section expertise-section" id="expertise" aria-labelledby="expertise-title">
+      <div class="section-heading"><div><p class="section-label"><span>02</span> Technical focus</p><h2 id="expertise-title">SYSTEMS THAT HOLD UP<br><em>UNDER PRESSURE.</em></h2></div><p>Focused on the engineering layers that make products resilient, secure, and easier to operate.</p></div>
+      <div class="skills-grid">
+        <article><span>01</span><i class="fa-solid fa-layer-group"></i><h3>Backend engineering</h3><p>FastAPI, Django, REST APIs, asynchronous processing, and background workers.</p><div>Python · FastAPI · Django</div></article>
+        <article><span>02</span><i class="fa-solid fa-database"></i><h3>Data &amp; performance</h3><p>Data models and service layers optimized for consistency, speed, and observability.</p><div>PostgreSQL · Redis · Celery</div></article>
+        <article><span>03</span><i class="fa-solid fa-shield-halved"></i><h3>Security &amp; access</h3><p>Fine-grained authorization and secure session flows for tenant-aware applications.</p><div>RBAC · UBAC · JWT · OAuth2</div></article>
+        <article><span>04</span><i class="fa-solid fa-network-wired"></i><h3>Network automation</h3><p>Device automation and real-time visibility across complex network environments.</p><div>Paramiko · Netmiko · WebSockets</div></article>
       </div>
     </section>
 
-    <section class="section expertise" id="expertise" aria-labelledby="expertise-title">
-      <div class="section-intro"><p class="eyebrow">02 / Expertise</p><h2 id="expertise-title">Capabilities built for production environments.</h2></div>
-      <div class="capability-grid">
-        <article class="capability"><span class="capability-number">01</span><h3>Backend systems</h3><p>FastAPI, Django, REST APIs, asynchronous processing, background workers, and service-oriented design.</p><ul><li>Python</li><li>FastAPI</li><li>Django REST Framework</li></ul></article>
-        <article class="capability"><span class="capability-number">02</span><h3>Data &amp; performance</h3><p>PostgreSQL and Redis systems tuned with indexing, query optimization, caching, and connection pooling.</p><ul><li>PostgreSQL</li><li>Redis</li><li>Celery</li></ul></article>
-        <article class="capability"><span class="capability-number">03</span><h3>Security &amp; access</h3><p>Fine-grained authorization and secure session flows for tenant-aware applications and APIs.</p><ul><li>RBAC / UBAC</li><li>JWT</li><li>OAuth2</li></ul></article>
-        <article class="capability"><span class="capability-number">04</span><h3>Infrastructure automation</h3><p>Network device automation, real-time visibility, and deployments across AWS EC2 and on-premise VMs.</p><ul><li>Paramiko / Netmiko</li><li>WebSockets</li><li>Docker &amp; CI/CD</li></ul></article>
+    <section class="content-section experience-section" id="experience" aria-labelledby="experience-title">
+      <div class="section-heading"><div><p class="section-label"><span>03</span> Career path</p><h2 id="experience-title">EXPERIENCE WITH<br><em>REAL SYSTEMS.</em></h2></div></div>
+      <div class="experience-list">
+        <article class="featured-role"><p class="role-date">Jun 2025 — Present</p><div><p class="company">Extravis <span>Islamabad, Pakistan</span></p><h3>Python Developer</h3><p>Building core services for MonetX and SupportX: network configuration management, RBAC/UBAC, traffic analytics, remote device access, and deployments for enterprise clients.</p><ul><li>FastAPI</li><li>PostgreSQL</li><li>AWS</li><li>Network Automation</li></ul></div></article>
+        <article><p class="role-date">Feb 2025 — Jun 2025</p><div><p class="company">CloudSpace Consulting LLC <span>Remote</span></p><h3>Data Science Instructor</h3><p>Led practical Python, data-analysis, and machine-learning training for an international cohort.</p></div></article>
+        <article><p class="role-date">Jul 2024 — Sep 2024</p><div><p class="company">Codes Vista <span>Rawalpindi, Pakistan</span></p><h3>Machine Learning Intern</h3><p>Built end-to-end data-preparation and model-evaluation workflows for supervised and unsupervised learning.</p></div></article>
       </div>
     </section>
 
-    <section class="section impact" aria-labelledby="impact-title">
-      <div class="section-intro"><p class="eyebrow">03 / Contribution</p><h2 id="impact-title">Built around complex operational needs.</h2></div>
-      <div class="impact-grid">
-        <article><strong>300+</strong><span>Platform issues resolved across MonetX, improving stability and user experience.</span></article>
-        <article><strong>4</strong><span>Interns mentored through FastAPI fundamentals, code reviews, and production work.</span></article>
-        <article><strong>Multi-tenant</strong><span>Architecture experience across network management and ITSM platforms.</span></article>
-      </div>
+    <section class="content-section projects-section" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading"><div><p class="section-label"><span>04</span> Selected work</p><h2 id="projects-title">WORK WITH<br><em>THE STORY INCLUDED.</em></h2></div></div>
+      <div class="project-empty"><i class="fa-regular fa-folder-open"></i><div><h3>Projects are being curated.</h3><p>Every case study here will explain the challenge, architecture, and outcome—not just show a screenshot.</p></div><a class="button secondary" href="https://github.com/rashidpython74" target="_blank" rel="noreferrer">Open GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
     </section>
 
-    <section class="section experience" id="experience" aria-labelledby="experience-title">
-      <div class="section-intro"><p class="eyebrow">04 / Experience</p><h2 id="experience-title">Professional experience.</h2></div>
-      <div class="timeline">
-        <article class="role role-featured"><div class="role-period">Jun 2025 — Present</div><div class="role-main"><p class="role-company">Extravis <span>· Islamabad, Pakistan</span></p><h3>Python Developer</h3><p>Developing core capabilities for MonetX, a multi-tenant network management platform: network configuration management, RBAC/UBAC, real-time traffic analytics, remote device access, and production deployment.</p><div class="role-tags"><span>FastAPI</span><span>PostgreSQL</span><span>Network Automation</span><span>AWS</span></div></div></article>
-        <article class="role"><div class="role-period">Feb 2025 — Jun 2025</div><div class="role-main"><p class="role-company">CloudSpace Consulting LLC <span>· Remote</span></p><h3>Data Science Instructor</h3><p>Delivered hands-on instruction in Python, data analysis, machine learning, project work, and practical debugging.</p></div></article>
-        <article class="role"><div class="role-period">Jul 2024 — Sep 2024</div><div class="role-main"><p class="role-company">Codes Vista <span>· Rawalpindi, Pakistan</span></p><h3>Machine Learning Intern</h3><p>Built data-preparation and machine-learning pipelines, evaluated supervised models, and applied clustering techniques for pattern discovery.</p></div></article>
-      </div>
-    </section>
-
-    <section class="section education" aria-labelledby="education-title">
-      <div class="section-intro"><p class="eyebrow">05 / Education</p><h2 id="education-title">Grounded in software engineering.</h2></div>
-      <div class="education-card"><div><p class="mono-label">2022 — Jan 2026</p><h3>Bachelor of Science in Software Engineering</h3></div><div><p>COMSATS University Islamabad, Wah Campus</p><p class="education-meta">CGPA: 3.4 / 4.0</p></div></div>
-    </section>
-
-    <section class="section projects" id="projects" aria-labelledby="projects-title">
-      <div class="section-intro"><p class="eyebrow">06 / Selected work</p><h2 id="projects-title">A more considered project archive is on its way.</h2></div>
-      <div class="project-placeholder"><i class="fa-solid fa-folder-open" aria-hidden="true"></i><p>Selected case studies will be published here shortly, with context around the problems, technical decisions, and outcomes.</p><a href="https://github.com/rashidpython74" target="_blank" rel="noreferrer">Explore GitHub in the meantime <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
-    </section>
-
-    <section class="contact" id="contact" aria-labelledby="contact-title">
-      <div><p class="eyebrow"><span></span> 07 / Contact</p><h2 id="contact-title">Let’s build something that lasts.</h2><p>I’m open to conversations about backend engineering, infrastructure automation, and teams solving substantial problems.</p></div>
-      <div class="contact-actions"><a class="email-link" href="mailto:alirashid8374@gmail.com">alirashid8374@gmail.com <i class="fa-solid fa-arrow-up-right-from-square"></i></a><div class="contact-links"><a href="https://linkedin.com/in/rashid-ali-pythondev" target="_blank" rel="noreferrer">LinkedIn <i class="fa-solid fa-arrow-up-right-from-square"></i></a><a href="https://github.com/rashidpython74" target="_blank" rel="noreferrer">GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></div>
-    </section>
+    <section class="contact-section" id="contact" aria-labelledby="contact-title"><p class="section-label"><span>05</span> Contact</p><h2 id="contact-title">LET’S BUILD<br><em>WHAT MATTERS.</em></h2><p>Open to backend engineering, infrastructure automation, and product teams solving substantial problems.</p><a class="contact-email" href="mailto:alirashid8374@gmail.com">alirashid8374@gmail.com <i class="fa-solid fa-arrow-up-right-from-square"></i></a><div class="social-links"><a href="https://linkedin.com/in/rashid-ali-pythondev" target="_blank" rel="noreferrer">LinkedIn</a><a href="https://github.com/rashidpython74" target="_blank" rel="noreferrer">GitHub</a></div></section>
   </main>
-
-  <footer class="site-footer"><a class="wordmark" href="#top">RA<span>.</span></a><p>© <span id="year"></span> Rashid Ali. Designed for considered work.</p><a href="#top">Back to top <i class="fa-solid fa-arrow-up"></i></a></footer>
   <script src="assets/js/script.js"></script>
 </body>
 </html>
